@@ -1,5 +1,5 @@
 //
-//  NavigationStack_RestoreNavigationPaths.swift
+//  NavigationStack_RestoreHomogeneousNavigationPaths.swift
 //  SwiftUICatalog
 //
 //  Created by 김건우 on 11/8/25.
@@ -67,7 +67,7 @@ private class NavigationManager {
     }
 }
 
-struct NavigationStack_RestoreNavigationPaths: View {
+struct NavigationStack_RestoreHomogeneousNavigationPaths: View {
     @State private var navigationManager = NavigationManager()
     @Environment(\.scenePhase) var scenePhase
     
@@ -100,5 +100,5 @@ private struct RecipeDetail: View {
 }
 
 #Preview {
-    NavigationStack_RestoreNavigationPaths()
+    NavigationStack_RestoreHomogeneousNavigationPaths()
 }
