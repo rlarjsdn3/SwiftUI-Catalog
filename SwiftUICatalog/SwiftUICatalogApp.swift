@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUICatalogApp: App {
     var body: some Scene {
         WindowGroup {
-            NavigationStack_Toolbar()
+            NavigationStack_ToolBarActionRole()
         }
     }
 }
