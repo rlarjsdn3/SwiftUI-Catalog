@@ -9,7 +9,13 @@ import SwiftUI
 
 struct Button_Basics: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Button(action: signIn) {
+            Text("Sign In")
+        }
+    }
+    
+    func signIn() {
+        print("tappped Sign In")
     }
 }
 

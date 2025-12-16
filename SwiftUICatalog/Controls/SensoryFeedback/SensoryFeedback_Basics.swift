@@ -8,8 +8,18 @@
 import SwiftUI
 
 struct SensoryFeedback_Basics: View {
+    @State private var showAccessory = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Show Accessory")
+            .sensoryFeedback(.selection, trigger: showAccessory)
+            .onLongPressGesture {
+                showAccessory.toggle()
+            }
+        
+        if showAccessory {
+            Color.yellow
+        }
     }
 }
 
