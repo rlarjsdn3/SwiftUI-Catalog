@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationStack {
             List {
-                
+                Image_AsyncImage()
             }
             .navigationTitle("SwiftUI Catalog")
             .navigationSubtitle("SwiftUI 카탈로그 & 샘플 코드")
